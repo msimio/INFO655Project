@@ -93,7 +93,7 @@ const App = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3001/tracks", requestOptions)
+    fetch("https://localhost:3001/tracks", requestOptions)
       .then((response) => response.json())
       .then((result) => setPosts(result))
       .catch((error) => console.log("error", error));
